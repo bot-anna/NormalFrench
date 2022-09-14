@@ -14,20 +14,20 @@ class Counter { //normal
 
     class = classique
     main = leMaine
-    int = baguette
-    = = jemapelle
+    int = baguette <
+    = = jemapelle <
     while = merde
-    < = voulevouz
-    > = moncherie
-    - = cheval
-    -- = licorne
-    + = pierre
-    ++ = jeanpierre
-    print = SACREBLEU
+    < = voulevouz <
+    > = moncherie <
+    - = cheval <
+    -- = licorne <
+    + = pierre <
+    ++ = jeanpierre <
+    print = SACREBLEU <
     boolean = escargot
     { = bonjour
     } = aurevoir
-    ; = oui
+    ; = .
 
 
 
