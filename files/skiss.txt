@@ -28,7 +28,7 @@ class Counter { //normal
     { = bonjour
     } = aurevoir
     ; = .
-
+    == = fromage
 
 
 

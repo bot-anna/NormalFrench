@@ -16,15 +16,17 @@ statement
 | print
 | crement
 | loop
+| inish
+;
+
+inish
+: declare 'jemapelle' expression
 ;
 
 declare
-: datatype ID
+: 'baguette' ID
 ;
 
-datatype
-: 'baguette'
-| '
  assign
  : ID 'jemapelle' expression
  ;
@@ -34,10 +36,9 @@ datatype
  | INT
  | add
  | sub
- | lowerthan
- | greaterthan
  | crement
  ;
+
 
  unaryexpression
  : ID
@@ -57,14 +58,6 @@ datatype
  : unaryexpression 'cheval' unaryexpression
  ;
 
- lowerthan
- : unaryexpression 'voulevouz' unaryexpression
- ;
-
- greaterthan
- : unaryexpression 'moncherie' unaryexpression
- ;
-
  increment
  : unaryexpression 'jeanpierre'
  ;
@@ -73,14 +66,25 @@ datatype
  : unaryexpression 'licorne'
  ;
 
+ condition
+ : unaryexpression conditionvariable unaryexpression
+ | unaryexpression
+ ;
+ conditionvariable
+ : 'moncherie'
+ | 'voulevouz'
+ | 'fromage'
+ ;
  print
  : 'SACREBLEU' ID
  ;
 
  loop
- : 'merde' '('
+ : 'merde' '(' condition ')' 'bonjour' code 'aurevoir'
+ ;
 
  ID: ('a'..'z')+ ;
  INT: ('0'..'9')+ ;
+ BOOLEAN: ('true' 'false');
  WS: [ \n\t\r]+ -> skip ;
 
