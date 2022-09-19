@@ -20,9 +20,11 @@ public class RunCompiler {
         CompileNormalFrench compiler = new CompileNormalFrench();
 
         System.out.println("Vilket program vill du kompilera?");
-        infile = scanner.nextLine();
+       // infile = scanner.nextLine();
+        infile = "program/test1.nf";
         System.out.println("Var ska den kompilerade filen sparas?");
-        outfile = scanner.nextLine();
+       // outfile = scanner.nextLine();
+        outfile = "program/test1out.vm";
 
         NormalFrenchLexer lexer = new NormalFrenchLexer(CharStreams.fromFileName(infile));
         CommonTokenStream tokens = new CommonTokenStream(lexer);

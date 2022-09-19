@@ -24,7 +24,7 @@ class Counter { //normal
     + = pierre <
     ++ = jeanpierre <
     print = SACREBLEU <
-    boolean = escargot
+    boolean = escargot X
     { = bonjour
     } = aurevoir
     ; = .

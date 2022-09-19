@@ -80,11 +80,17 @@ declare
  ;
 
  loop
- : 'merde' '(' condition ')' 'bonjour' code 'aurevoir'
+ : 'merde' '(' condition ')' enterConditionedSegment code exitConditionedSegment
+ ;
+
+ enterConditionedSegment
+ : 'bonjour'
+ ;
+ exitConditionedSegment
+ : 'aurevoir'
  ;
 
  ID: ('a'..'z')+ ;
  INT: ('0'..'9')+ ;
- BOOLEAN: ('true' 'false');
  WS: [ \n\t\r]+ -> skip ;
 
