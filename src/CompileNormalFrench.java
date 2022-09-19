@@ -8,7 +8,6 @@ import java.util.Stack;
 
 /*
 * TODO:
-*    -implementera loop-stacken
 *    - fixa objekt och arrayer
 *    - kika på om du vill kunna printa annat än id
 *
@@ -295,7 +294,6 @@ public class CompileNormalFrench extends NormalFrenchBaseListener {
         out.append("label enterLoop" + loopcounter  + "\n");
         loopStack.push(loopcounter);
         loopcounter++;
-        out.append("exiting enterloop" + "\n");
     }
     /**
      * {@inheritDoc}
