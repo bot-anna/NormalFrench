@@ -86,19 +86,19 @@ public class CompileNormalFrench extends NormalFrenchBaseListener {
         out.append("sub" + "\n");
         out.append("pop " + ctx.unaryexpression().ID());}
     @Override public void exitCondition(NormalFrenchParser.ConditionContext ctx) {
-        String variable = null;
+        String operand = null;
         switch (ctx.conditionvariable().getText()) {
             case "moncherie":
-                variable = "gt";
+                operand = "gt";
                 break;
             case "voulevouz":
-                variable = "lt";
+                operand = "lt";
                 break;
             case "fromage":
-                variable = "eq";
+                operand = "eq";
                 break;
         }
-        out.append(variable + "\n");
+        out.append(operand + "\n");
     }
     @Override public void exitPrint(NormalFrenchParser.PrintContext ctx) {
         out.append("print " + ctx.ID() + "\n");
