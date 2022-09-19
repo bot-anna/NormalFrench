@@ -17,4 +17,7 @@ aurevoir.
 hej jeanpierre.
 aurevoir.
 
+merde(hej voulevouz 3) bonjour
+hej jeanpierre.
+aurevoir.
 SACREBLEU hej.
